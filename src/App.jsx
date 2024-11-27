@@ -86,7 +86,7 @@ function App() {
     <div className="task-manager">
       {/* Intestazione con sfondo colorato */}
       <header className="header">
-        <h1>Task Manager</h1>
+        <h1>Task Manager</h1> {/* Titolo della pagina */}
       </header>
       {/* Sezione per i task correnti */}
       <div className="section">
@@ -99,8 +99,8 @@ function App() {
               <div className="task-header">
                 <h3>{task.title}</h3>
                 <span className={`badge ${task.state}`}>
-                  {task.state.replace("_", " ")}{" "}
-                  {/* Mostra lo stato del task, sostituendo "_" con uno spazio */}
+                  {task.state}{" "}
+                  {/* Mostra direttamente lo stato del task, mantenendo l'underscore */}
                 </span>
               </div>
               <p>Priority: {task.priority}</p>{" "}
