@@ -76,7 +76,15 @@ function App() {
     },
   ];
 
-  console.log(tasks);
+  const currentTasks = tasks.filter(
+    (task) => task.state === "backlog" || task.state === "in_progress"
+  );
+
+  const completedTasks = tasks.filter((task) => task.state === "completed");
+
+  console.log("Current Tasks:", currentTasks);
+
+  console.log("Completed Tasks:", completedTasks);
 
   return (
     <>
