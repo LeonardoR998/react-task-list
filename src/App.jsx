@@ -98,10 +98,7 @@ function App() {
             <li key={task.id} className="task">
               <div className="task-header">
                 <h3>{task.title}</h3>
-                <span className={`badge ${task.state}`}>
-                  {task.state}{" "}
-                  {/* Mostra direttamente lo stato del task, mantenendo l'underscore */}
-                </span>
+                <span className={`badge ${task.state}`}>{task.state} </span>
               </div>
               <p>Priority: {task.priority}</p>{" "}
               {/* Mostra la priorità del task */}
