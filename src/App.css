@@ -1,0 +1,65 @@
+/* Sfondo e stile dell'header */
+.header {
+  background-color: #aaffcc;
+  padding: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Sezioni */
+.section {
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #444;
+}
+
+/* Lista dei task */
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+/* Badge per gli stati */
+.badge {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.badge.backlog {
+  background-color: #ffcc80;
+}
+
+.badge.in_progress {
+  background-color: #64b5f6;
+}
+
+.badge.completed {
+  background-color: #81c784;
+}
